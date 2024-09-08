@@ -19,8 +19,9 @@ app.use('/iv', interviewRouter);
 app.use('/ai', AIRouter);
 app.use('/auth', LoginRouter);
 
+
 mongoose.set('strictQuery', false);
-mongoose.connect('mongodb+srv://hackathon:hackathon@cluster0.1pqceio.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect(process.env.MONGO_URL)
   .then(() => {
     console.log("DataBase connection successful")
   })
