@@ -3,7 +3,7 @@ import questionsModel from '../schema/questionsSchema.js';
 import responseModel from '../schema/interviewSchema.js';
 import { GoogleGenerativeAI } from '@google/generative-ai'
 
-const genAI = new GoogleGenerativeAI('AIzaSyCS6PIl49oqxvJFcMd60C5yAyjQhaTcz0w');
+const genAI = new GoogleGenerativeAI('AIzaSyD-vCvpTr_ybNXqEDTh2pusn0qC5yBAZZc');
 
 const AIRouter = express.Router();
 
