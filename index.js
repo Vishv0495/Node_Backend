@@ -11,9 +11,7 @@ import dotenv from 'dotenv';
 import AIRouter from './route/shortlist.route.js';
 import LoginRouter from './route/login.router.js';
 dotenv.config();
-app.use(cors({
-    origin: 'http://localhost:1456'  // Allow requests from your frontend origin
-}));
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
