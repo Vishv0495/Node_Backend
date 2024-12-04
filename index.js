@@ -23,7 +23,7 @@ app.use('/auth', LoginRouter);
 
 
 mongoose.set('strictQuery', false);
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect("mongodb+srv://vishv:vishv@cluster0.dlln6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
     console.log("DataBase connection successful")
   })
